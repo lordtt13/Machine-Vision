@@ -46,3 +46,5 @@ keras_model.predict(X_test,batch_size = 10,verbose = 1)
 from sklearn.metrics import roc_auc_score
 print(roc_auc_score(y_test,model.predict(X_test)))
 print(roc_auc_score(y_test,keras_model.predict(X_test)))
+
+model.save('tflite_model.h5')
