@@ -1,0 +1,4 @@
+*.csv
+*.jpeg
+*.jpg
+/PoseNet/pose
