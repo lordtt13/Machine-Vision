@@ -31,7 +31,7 @@ for i in range(15):
  
     if prob > threshold :
         cv2.circle(frame,(x,y),5,(0,255,255),thickness=-1,lineType=cv2.FILLED)
-        cv2.putText(frame,"{}".format(i),(x,y),cv2.FONT_HERSHEY_SIMPLEX,1.4,(0,0,255),3,lineType=cv2.LINE_AA)
+        #cv2.putText(frame,"{}".format(i),(x,y),cv2.FONT_HERSHEY_SIMPLEX,1.4,(0,0,255),3,lineType=cv2.LINE_AA)
         points.append((x,y))
     else :
         points.append(None)
