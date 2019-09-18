@@ -40,6 +40,8 @@ sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
+model = load_model('tflite_model.h5')
+
 model.predict(X_test,batch_size = 10,verbose = 1)
 keras_model.predict(X_test,batch_size = 10,verbose = 1)
 
